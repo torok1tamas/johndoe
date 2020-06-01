@@ -1,0 +1,148 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 100%;
+  color: #1c2e4a;
+}
+
+.contact-card {
+  width: 680px;
+  max-width: calc(100vw - 10px);
+  height: 460px;
+  padding:20px
+}
+
+.sayhello { 
+  color:  rgb(211,211,211,0.1);
+  font-size: 0.7em;
+}
+
+#contact-card {
+  border-radius: 5px;
+  background-color: rgb(211,211,211,.4);
+  box-shadow: hsla(0, 0%, 0%, .8) 10px 10px 80px;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "calibri";
+  background: url('assets/hatterkep.jpg') no-repeat center center fixed;
+  background-size: cover;
+
+}
+
+
+#content {
+  height: 380px;
+}
+
+#profile-image {
+  width: 50%;
+  height: 40%;
+  background-color: rgb(211,211,211,.8);
+  float: left;
+  padding: 5px;
+  border-right: 1px solid hsla(0, 0%, 30%, .5);
+  
+}
+
+#main-data {
+  width: 50%;
+  height: 60%;
+  background-color: rgb(211,211,211,.8);
+  float: right;
+  border-right: 1px solid hsla(0, 0%, 30%, .5);
+  padding: 20px;
+  font-size: 1.4em;
+}
+
+#about {
+  width: 50%;
+  height: 100%;
+  background-color: rgb(211,211,211,.8);
+  float: right;
+  text-align: justify;
+  font-style: italic;
+  padding: 50px 20px;
+  font-size: 20px
+    
+    
+}
+
+#bottom {
+  width: 100%;
+  height: 40px;
+  background-color: rgb(211,211,211,.8);
+  float: right;
+  text-align: center;
+  padding: 10px;
+  border-top: 1px solid hsla(0, 0%, 30%, .5);
+}
+
+img {
+  border-radius: 10%;
+  padding: 1px;
+  background-color: #666;
+  transition: transform 0.5s;
+}
+
+ul {
+  list-style-type: none;
+}
+
+li {
+  display: inline;
+}
+
+h1 {
+  font-size: 1.8em;
+}
+
+h2 {
+  font-size: 1.2em;
+}
+
+.contactme:hover {
+  font-weight: bold;
+}
+
+:root {
+  --mainColor: #1c2e4a;
+}
+#blue-highlight {
+  background:
+     linear-gradient(
+       to right,
+       var(--mainColor) 0%,
+       var(--mainColor) 5px,
+       transparent 5px
+     );
+    background-repeat: repeat-x;
+    background-size: 100%;
+  color: #000;
+  padding-left: 10px;
+  text-decoration: none;
+}
+
+#blue-highlight:hover {
+  background:
+     linear-gradient(
+       to right,
+       var(--mainColor) 0%,
+       var(--mainColor) 5px,
+       transparent
+     );
+}
+
+.about-paragraph:hover {
+  font-style: normal;
+}
+
+.image:hover{
+  transform: rotate(360deg);
+}
+
