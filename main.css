@@ -146,3 +146,6 @@ h2 {
   transform: rotate(360deg);
 }
 
+.image:hover ~ .sayhello {
+  color: #1c2e4a;
+}
