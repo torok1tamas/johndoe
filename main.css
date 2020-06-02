@@ -113,7 +113,7 @@ h2 {
 :root {
   --mainColor: #1c2e4a;
 }
-#blue-highlight {
+.blue-highlight {
   background:
      linear-gradient(
        to right,
@@ -128,7 +128,7 @@ h2 {
   text-decoration: none;
 }
 
-#blue-highlight:hover {
+.blue-highlight:hover {
   background:
      linear-gradient(
        to right,
