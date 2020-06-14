@@ -1,3 +1,4 @@
+
 * {
   margin: 0;
   padding: 0;
@@ -8,10 +9,9 @@
 }
   
 .contact-card {
-  width: 680px;
-  max-width: calc(100vw - 10px);
-  height: 480px;
-  padding:20px
+  width: 65vw;
+  height: 85vh;
+  padding: 2vw;
 }
 
 .sayhello { 
@@ -20,7 +20,7 @@
   height: 100%;
   float: right;
   background-color: rgb(211,211,211,.1);
-  padding: 45px;
+  padding: 15%;
   text-align: center;
 }
 
@@ -41,17 +41,12 @@ body {
 
 }
 
-
-#content {
-  height: 380px;
-}
-
 #profile-image {
   width: 50%;
   height: 40%;
   background-color: rgb(211,211,211,.8);
   float: left;
-  padding: 5px;
+  padding: 1%;
   border-right: 1px solid hsla(0, 0%, 30%, .5);
 }
 
@@ -72,10 +67,8 @@ body {
   float: right;
   text-align: justify;
   font-style: italic;
-  padding: 50px 20px;
-  font-size: 20px
-    
-    
+  padding: 10% 5%;
+  font-size: 20px    
 }
 
 #bottom {
@@ -84,13 +77,13 @@ body {
   background-color: rgb(211,211,211,.8);
   float: right;
   text-align: center;
-  padding: 10px;
+  padding: 2%;
   border-top: 1px solid hsla(0, 0%, 30%, .5);
 }
 
 img {
   border-radius: 10%;
-
+  width: 50%;
   background-color: #666;
   transition: transform 0.5s;
   position: relative;
@@ -130,7 +123,7 @@ h2 {
     background-repeat: repeat-x;
     background-size: 100%;
   color: #000;
-  padding-left: 10px;
+  padding-left: 5%;
   text-decoration: none;
 }
 
@@ -156,5 +149,109 @@ h2 {
   color: #1c2e4a;
 }
 
+@media (min-width: 1024px) {
+  
+  img {
+    width: 45%;
+  }
+  
+}
 
+@media (max-width: 770px) {
+  
+  #profile-image {
+    margin-top: 2vh;
+    float: left;
+    height: 33vh;
+    width: 100%;
+    z-index: 1;
+    clear: right;
+    border-right: none;
+    border-bottom: 1px solid hsla(0, 0%, 30%, .5);
+  }
+  
+  img {
+    float: left;
+    height: 70%;
+    width: 33%;
+    clear: right;
+  }
+  
+  #main-data {
+    float: left;
+    width: 100%;
+    z-index: 2;
+  }
+  
+  #about {
+    float: left;
+    width: 100%;
+    z-index: 3;
+  }
+  
+  #bottom {
+    float: left;
+    width: 100%;
+    z-index: 4;
+  }
 
+  #sayhello {
+    float: right;
+  }
+  
+  .contact-card {
+    position: absolute;
+    margin: 2vh;
+    height: auto;
+    width: auto;
+  }
+}
+
+@media (max-width: 500px) {
+  
+  #profile-image {
+    float: left;
+    height: 33vh;
+    width: 100%;
+    z-index: 1;
+    clear: right;
+    border-right: none;
+    border-bottom: 1px solid hsla(0, 0%, 30%, .5);
+  }
+  
+  img {
+    float: left;
+    height: 70%;
+    width: 33%;
+    clear: right;
+  }
+  
+  #main-data {
+    float: left;
+    width: 100%;
+    z-index: 2;
+  }
+  
+  #about {
+    float: left;
+    width: 100%;
+    z-index: 3;
+  }
+  
+  #bottom {
+    float: left;
+    width: 100%;
+    z-index: 4;
+  }
+
+  #sayhello {
+    float: right;
+  }
+  
+  .contact-card {
+    position: absolute;
+    margin: 0.5vh;
+    width: auto;
+    height: auto;
+  }
+}
